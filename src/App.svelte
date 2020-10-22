@@ -1,211 +1,101 @@
 <script>
-	import { onMount } from 'svelte';
-	
-	const games = [
-		// Streamed via Discord
-		// Jackbox 4
-		{
-			"name": "Fibbage 3",
-			"min_players": 2,
-			"max_players": 8,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Fibbage Enough about You",
-			"min_players": 2,
-			"max_players": 8,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Survive the Internet",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Monster Seeking Monster",
-			"min_players": 3,
-			"max_players": 7,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Bracketeering",
-			"min_players": 3,
-			"max_players": 16,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Civic Doodle",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 4",
-			"requires_streaming": true,
-		},
-		// Jackbox 5
-		{
-			"name": "You dont know jack",
-			"min_players": 1,
-			"max_players": 8,
-			"requires": "Jackbox 5",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Split the room",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 5",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Mad verse city",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 5",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Patently stupid",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 5",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Zeeple dome",
-			"min_players": 1,
-			"max_players": 6,
-			"requires": "Jackbox 5",
-			"requires_streaming": true,
-		},
-		// Jackbox 6
-		{
-			"name": "Trivia murder party 2",
-			"min_players": 1,
-			"max_players": 8,
-			"requires": "Jackbox 6",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Role models",
-			"min_players": 3,
-			"max_players": 6,
-			"requires": "Jackbox 6",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Joke boat",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 6",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Dictionarium",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Jackbox 6",
-			"requires_streaming": true,
-		},
-		{
-			"name": "Push the button",
-			"min_players": 4,
-			"max_players": 10,
-			"requires": "Jackbox 6",
-			"requires_streaming": true,
-		},
-		// Steam
-		{
-			"name": "Drawful",
-			"min_players": 3,
-			"max_players": 8,
-			"requires": "Drawful",
-			"requires_streaming": true,
-		},
-		
-		// Thick client
-		// Steam (Win, Mac, Lin)
-		{
-			"name": "Clue",
-			"min_players": 3,
-			"max_players": 6,
-			"requires": "Tabletop Simulator",
-			"requires_streaming": false,
-		},
-		{
-			"name": "Deceit",
-			"min_players": 6,
-			"max_players": 6,
-			"requires": "Deceit",
-			"requires_streaming": true,
-		},
-		// Steam (Win), Mobile (Android, iOS)
-		{
-			"name": "Among Us",
-			"min_players": 4,
-			"max_players": 10,
-			"requires": "Among Us",
-			"requires_streaming": false,
-		},
-		
-		// Web client
-		// Netgames
-		{
-			"name": "One Night Werewolf",
-			"min_players": 3,
-			"max_players": 21,
-			"requires": "N/A",
-			"requires_streaming": false,
-		},
-		{
-			"name": "Codewords",
-			"min_players": 4,
-			"max_players": 100,
-			"requires": "N/A",
-			"requires_streaming": false,
-		},
-		// Secret Hitler
-		{
-			"name": "Secret Hitler",
-			"min_players": 5,
-			"max_players": 10,
-			"requires": "N/A",
-			"requires_streaming": false,
-		},
-		
-	]
-	
-	let game = "...";
-	let chosenGame = false;
-	
+	import 'bulma/css/bulma.css'
+	import '@fortawesome/fontawesome-free/css/all.css'
+	import Games from './games';
+
 	const shuffleGame = () => {
-		game = "[...]"
+		gameMessage = "[...]"
 		setTimeout(() => {
-			game = "[shuffling dices...]";
+			gameMessage = "[shuffling dices...]";
 			setTimeout(() => {
-				game = "[rolling cards...]";
+				gameMessage = "[rolling cards...]";
 				setTimeout(() => {
 					chosenGame = true;
-					gameObj = games[Math.floor(Math.random() * games.length)]
-					game = gameObj["name"]
+					game = Games.GamesList[Math.floor(Math.random() * Games.GamesList.length)]
+					gameMessage = game["name"]
 				}, 1500)
 			}, 1500)
 		}, 1500)
 	}
-	
-	onMount(() => {
-		shuffleGame()
-	});
+
+	let game = null;
+	let settings = false;
+	let gameMessage = "...";
+	let chosenGame = false;
+
+	// onMount(() => {
+	// 	shuffleGame()
+	// });
 </script>
 
-<h2>We are playing <i>{game}</i></h2>
+<a class="github-fork-ribbon" href="https://github.com/marcolussetti/partygamepicker" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+<section class="hero is-light is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                We are playing <i>{gameMessage}</i>
+            </h1>
+            {#if game}
+                <div class="box">
+					<div class="container">
+						<h1 class="subtitle has-text-centered is-italic"><p>{game.name}</p></h1>
+					</div>
+                    <div class="columns">
+                        <div class="column">
+                            <nav class="panel">
+                                <div class="panel-block">
+                                    <div class="container is-fluid">
+                                        <div class="columns">
+                                            <div class="column is-one-third has-text-weight-bold">Min Players:</div>
+                                            <div class="column is-two-thirds">{game.min_players}</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-{#if chosenGame}
-<button on:click={() => shuffleGame()}>
-	Thx I hate it
-</button>
-{/if}
+                                <div class="panel-block">
+                                    <div class="container is-fluid">
+                                        <div class="columns">
+                                            <div class="column is-one-third has-text-weight-bold">Max Players:</div>
+                                            <div class="column is-two-thirds">{game.max_players}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="column">
+                            <nav class="panel">
+                                <div class="panel-block">
+                                    <div class="container is-fluid">
+                                        <div class="columns">
+                                            <div class="column is-one-third has-text-weight-bold">Requires:</div>
+                                            <div class="column is-two-thirds">{game.requires}</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-block">
+                                    <div class="container is-fluid">
+                                        <div class="columns">
+                                            <div class="column is-one-third has-text-weight-bold">Requires streaming:
+                                            </div>
+                                            <div class="column is-two-thirds">{game.requires_streaming ? "yes" : "no"}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            {/if}
+
+            <button on:click={() => shuffleGame()}>
+                {#if chosenGame}
+                    Thx I hate it
+                {:else}
+                    Give me a game
+                {/if}
+            </button>
+        </div>
+    </div>
+</section>
