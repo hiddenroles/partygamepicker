@@ -1,6 +1,8 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "partygamepicker",
+  "version": "0.0.1",
+  "author": "Marco Lussetti and The Hidden Roles Project <packages@hiddenroles.com> (https://hiddenroles.com)",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -18,10 +20,19 @@
     "svelte": "^3.0.0",
     "svelte-preprocess": "^4.5.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiddenroles/partygamepicker.git"
+  },
+  "keywords": [],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bulma": "^0.9.1",
     "sirv-cli": "^1.0.0",
     "svelma": "^0.4.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hiddenroles/partygamepicker/issues"
+  },
+  "homepage": "https://github.com/hiddenroles/partygamepicker"
 }
