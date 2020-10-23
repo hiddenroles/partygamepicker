@@ -8,6 +8,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		{
 			"name": "Fibbage Enough about You",
@@ -15,6 +16,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		{
 			"name": "Survive the Internet",
@@ -22,6 +24,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		{
 			"name": "Monster Seeking Monster",
@@ -29,6 +32,7 @@ export default class Games {
 			"max_players": 7,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		{
 			"name": "Bracketeering",
@@ -36,6 +40,7 @@ export default class Games {
 			"max_players": 16,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		{
 			"name": "Civic Doodle",
@@ -43,6 +48,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 		},
 		// Jackbox 5
 		{
@@ -51,6 +57,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 		},
 		{
 			"name": "Split the room",
@@ -58,6 +65,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 		},
 		{
 			"name": "Mad verse city",
@@ -65,6 +73,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 		},
 		{
 			"name": "Patently stupid",
@@ -72,6 +81,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 		},
 		{
 			"name": "Zeeple dome",
@@ -79,6 +89,7 @@ export default class Games {
 			"max_players": 6,
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 		},
 		// Jackbox 6
 		{
@@ -87,6 +98,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
 		{
 			"name": "Role models",
@@ -94,6 +106,7 @@ export default class Games {
 			"max_players": 6,
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
 		{
 			"name": "Joke boat",
@@ -101,6 +114,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
 		{
 			"name": "Dictionarium",
@@ -108,6 +122,7 @@ export default class Games {
 			"max_players": 8,
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
 		{
 			"name": "Push the button",
@@ -115,14 +130,16 @@ export default class Games {
 			"max_players": 10,
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
 		// Steam
 		{
-			"name": "Drawful",
+			"name": "Drawful 2",
 			"min_players": 3,
 			"max_players": 8,
 			"requires": "Drawful",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/442070/Drawful_2/",
 		},
 
 		// Thick client
@@ -133,6 +150,7 @@ export default class Games {
 			"max_players": 6,
 			"requires": "Tabletop Simulator",
 			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/286160/Tabletop_Simulator/",
 		},
 		{
 			"name": "Deceit",
@@ -140,6 +158,7 @@ export default class Games {
 			"max_players": 6,
 			"requires": "Deceit",
 			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/466240/Deceit/",
 		},
 		// Steam (Win), Mobile (Android, iOS)
 		{
@@ -148,6 +167,7 @@ export default class Games {
 			"max_players": 10,
 			"requires": "Among Us",
 			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/945360/Among_Us/",
 		},
 
 		// Web client
@@ -158,6 +178,7 @@ export default class Games {
 			"max_players": 21,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/onu-werewolf/",
 		},
 		{
 			"name": "Codewords",
@@ -165,6 +186,7 @@ export default class Games {
 			"max_players": 100,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/codewords/",
 		},
 		{
 			"name": "Spyfall",
@@ -172,6 +194,7 @@ export default class Games {
 			"max_players": 100,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/spyfall/",
 		},
 		{
 			"name": "Love Letter",
@@ -179,6 +202,7 @@ export default class Games {
 			"max_players": 4,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/love-letter/",
 		},
 		{
 			"name": "Avalon",
@@ -186,6 +210,7 @@ export default class Games {
 			"max_players": 10,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/avalon/",
 		},
 		{
 			"name": "Enigma",
@@ -193,6 +218,7 @@ export default class Games {
 			"max_players": 100,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://netgames.io/games/enigma/",
 		},
 		// Secret Hitler
 		{
@@ -201,6 +227,7 @@ export default class Games {
 			"max_players": 10,
 			"requires": "N/A",
 			"requires_streaming": false,
+			"url": "https://github.com/cozuya/secret-hitler",
 		},
 
 	]

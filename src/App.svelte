@@ -38,7 +38,7 @@
             {#if game}
                 <div class="box">
 					<div class="container">
-						<h1 class="subtitle has-text-centered is-italic"><p>{game.name}</p></h1>
+                        <h1 class="subtitle has-text-centered is-italic"><p><a href="{game.url}">{game.name}</a></p></h1>
 					</div>
                     <div class="columns">
                         <div class="column">
