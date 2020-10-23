@@ -132,6 +132,47 @@ export default class Games {
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 		},
+		// Jackbox Party Pack 7
+		{
+			"name": "Quiplash 3",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 7",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+		},
+		{
+			"name": "The Devils and the Details",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 7",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+		},
+		{
+			"name": "Champ’d Up",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 7",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+		},
+		{
+			"name": "Talking Points",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 7",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+		},
+		{
+			"name": "Blather ‘Round",
+			"min_players": 2,
+			"max_players": 6,
+			"requires": "Jackbox 7",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+		},
 		// Steam
 		{
 			"name": "Drawful 2",
