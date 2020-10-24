@@ -286,7 +286,7 @@
 			{:else}
 				<div class="container">
 					{#each Games.GamesList.filter(g => {
-						return g.max_players >= settings.sliders.players.value && g.min_players <= settings.sliders.players.value
+						return settings.sliders.players.enabled ? g.max_players >= settings.sliders.players.value && g.min_players <= settings.sliders.players.value : true
 					}) as gameEl}
 						<div class="box">
 							<div class="container">
