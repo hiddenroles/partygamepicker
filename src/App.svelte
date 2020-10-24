@@ -26,6 +26,7 @@
 	let settingsShown = true;
 	let gameMessage = "...";
 	let chosenGame = false;
+	let pickerMode = true;
 
 	let settings = {
 		"sliders": {
@@ -58,6 +59,12 @@
 		e.stopPropagation()
 		console.log('Toggling settings')
 		settingsShown = !settingsShown
+	}
+
+	function togglePicker(e) {
+		e.stopPropagation()
+		console.log('Toggling mode')
+		pickerMode = !pickerMode
 	}
 
 	function toggleSlider(filter, e) {
@@ -105,6 +112,11 @@
 		visibility: hidden;
 	}
 
+	.is-sticky-filter {
+		position: fixed;
+		top: 45vh;
+	}
+
 </style>
 
 <!--<svelte:head>-->
@@ -136,13 +148,17 @@
 			<a class="navbar-item" on:click={toggleSettings}>
 				{settingsShown ? "Hide filters" : "Show filters"}
 			</a>
+
+			<a class="navbar-item" on:click={togglePicker}>
+				{pickerMode ? "Switch to all games" : "Switch to picker"}
+			</a>
 		</div>
 	</div>
 </nav>
 <section class="hero is-light is-fullheight-with-navbar">
 	<div class="hero-body columns">
 		<div class="column is-one-quarter">
-			<div class="filters card {!settingsShown ? 'is-inactive' : ''}">
+			<div class="filters card {!settingsShown ? 'is-inactive' : ''} {!pickerMode ? 'is-sticky-filter' : ''}">
 				<header class="card-header">
 					<p class="card-header-title">
 						Filters
@@ -160,7 +176,8 @@
 								</label>
 							</div>
 							<div class="column">
-								<input class="slider is-fullwidth is-circle" disabled={!settings.sliders.players.enabled} id="playersCountSlider" max="20"
+								<input class="slider is-fullwidth is-circle" disabled={!settings.sliders.players.enabled}
+											 id="playersCountSlider" max="20"
 											 min="1"
 											 on:change="{e => settings.sliders.players.value = e.target.value}" step="1" type="range"
 											 value={settings.sliders.players.value}>
@@ -171,25 +188,25 @@
 							</div>
 						</div>
 
-<!--						<div class="title is-5 columns">-->
-<!--							<div class="column">-->
-<!--								<label class="checkbox  {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-<!--											 on:click="{e => toggleSlider('cost', e)}">-->
-<!--									<input type="checkbox" value={settings.sliders.cost.enabled}>-->
-<!--									Cost-->
-<!--								</label>-->
-<!--							</div>-->
-<!--							<div class="column">-->
-<!--								<input class="slider has-output-tooltip is-fullwidth" disabled={!settings.sliders.cost.enabled} id="costSlider" max="20"-->
-<!--											 min="1"-->
-<!--											 on:change="{e => settings.sliders.cost.value = e.target.value}" step="1" type="range"-->
-<!--											 value={settings.sliders.cost.value}>-->
-<!--							</div>-->
-<!--							<div class="column">-->
-<!--								<label class="has-text-centered {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-<!--											 for="playersCountSlider">{"<"}{settings.sliders.cost.value}$</label>-->
-<!--							</div>-->
-<!--						</div>-->
+						<!--						<div class="title is-5 columns">-->
+						<!--							<div class="column">-->
+						<!--								<label class="checkbox  {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
+						<!--											 on:click="{e => toggleSlider('cost', e)}">-->
+						<!--									<input type="checkbox" value={settings.sliders.cost.enabled}>-->
+						<!--									Cost-->
+						<!--								</label>-->
+						<!--							</div>-->
+						<!--							<div class="column">-->
+						<!--								<input class="slider has-output-tooltip is-fullwidth" disabled={!settings.sliders.cost.enabled} id="costSlider" max="20"-->
+						<!--											 min="1"-->
+						<!--											 on:change="{e => settings.sliders.cost.value = e.target.value}" step="1" type="range"-->
+						<!--											 value={settings.sliders.cost.value}>-->
+						<!--							</div>-->
+						<!--							<div class="column">-->
+						<!--								<label class="has-text-centered {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
+						<!--											 for="playersCountSlider">{"<"}{settings.sliders.cost.value}$</label>-->
+						<!--							</div>-->
+						<!--						</div>-->
 
 					</div>
 				</div>
@@ -198,73 +215,133 @@
 
 		</div>
 		<div class="column is-three-quarters">
-			<div class="container">
-				<h1 class="title">
-					We are playing <i>{gameMessage}</i>
-				</h1>
+			{#if pickerMode}
+				<div class="container">
+					<h1 class="title">
+						We are playing <i>{gameMessage}</i>
+					</h1>
 
-				{#if game}
-					<div class="box">
-						<div class="container">
-							<h1 class="subtitle has-text-centered is-italic"><p><a href="{game.url}">{game.name}</a></p></h1>
-						</div>
-						<div class="columns">
-							<div class="column">
-								<nav class="panel">
-									<div class="panel-block">
-										<div class="container is-fluid">
-											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Min Players:</div>
-												<div class="column is-two-thirds">{game.min_players}</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="panel-block">
-										<div class="container is-fluid">
-											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Max Players:</div>
-												<div class="column is-two-thirds">{game.max_players}</div>
-											</div>
-										</div>
-									</div>
-								</nav>
+					{#if game}
+						<div class="box">
+							<div class="container">
+								<h1 class="subtitle has-text-centered is-italic"><p><a href="{game.url}">{game.name}</a></p></h1>
 							</div>
-
-							<div class="column">
-								<nav class="panel">
-									<div class="panel-block">
-										<div class="container is-fluid">
-											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Requires:</div>
-												<div class="column is-two-thirds">{game.requires}</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="panel-block">
-										<div class="container is-fluid">
-											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Requires streaming:
+							<div class="columns">
+								<div class="column">
+									<nav class="panel">
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Min Players:</div>
+													<div class="column is-two-thirds">{game.min_players}</div>
 												</div>
-												<div class="column is-two-thirds">{game.requires_streaming ? "yes" : "no"}</div>
 											</div>
 										</div>
-									</div>
-								</nav>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Max Players:</div>
+													<div class="column is-two-thirds">{game.max_players}</div>
+												</div>
+											</div>
+										</div>
+									</nav>
+								</div>
+
+								<div class="column">
+									<nav class="panel">
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Requires:</div>
+													<div class="column is-two-thirds">{game.requires}</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Requires streaming:
+													</div>
+													<div class="column is-two-thirds">{game.requires_streaming ? "yes" : "no"}</div>
+												</div>
+											</div>
+										</div>
+									</nav>
+								</div>
 							</div>
 						</div>
-					</div>
-				{/if}
-
-				<button on:click={() => shuffleGame()}>
-					{#if chosenGame}
-						Thx I hate it
-					{:else}
-						Give me a game
 					{/if}
-				</button>
-			</div>
+
+					<button on:click={() => shuffleGame()}>
+						{#if chosenGame}
+							Thx I hate it
+						{:else}
+							Give me a game
+						{/if}
+					</button>
+				</div>
+			{:else}
+				<div class="container">
+					{#each Games.GamesList.filter(g => {
+						return settings.sliders.players.enabled ? g.max_players >= settings.sliders.players.value && g.min_players <= settings.sliders.players.value : true
+					}) as gameEl}
+						<div class="box">
+							<div class="container">
+								<h1 class="subtitle has-text-centered is-italic"><p><a href="{gameEl.url}">{gameEl.name}</a></p></h1>
+							</div>
+							<div class="columns">
+								<div class="column">
+									<nav class="panel">
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Min Players:</div>
+													<div class="column is-two-thirds">{gameEl.min_players}</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Max Players:</div>
+													<div class="column is-two-thirds">{gameEl.max_players}</div>
+												</div>
+											</div>
+										</div>
+									</nav>
+								</div>
+
+								<div class="column">
+									<nav class="panel">
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Requires:</div>
+													<div class="column is-two-thirds">{gameEl.requires}</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">Requires streaming:
+													</div>
+													<div class="column is-two-thirds">{gameEl.requires_streaming ? "yes" : "no"}</div>
+												</div>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>
