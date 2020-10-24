@@ -1,11 +1,8 @@
 <script>
 	import 'bulma/css/bulma.css'
-	// import 'bulma-slider/dist/bulma-slider.mind.css'
 	import '@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css';
 	import '@fortawesome/fontawesome-free/css/all.css'
 	import Games from './games';
-	// import * as bulmaSlider from "bulma-slider";
-	// import * as bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
 	const shuffleGame = () => {
 		gameMessage = "[...]"
@@ -51,11 +48,6 @@
 		}
 	}
 
-	// onMount(() => {
-	// 	shuffleGame()
-	// });
-	// bulmaSlider.attach();
-
 	function toggleSettings(e) {
 		e.stopPropagation()
 		console.log('Toggling settings')
@@ -79,13 +71,6 @@
 				return game.max_players >= settings.sliders.players.value && game.min_players <= settings.sliders.players.value
 			})
 		}
-		// if (settings.sliders.cost.enabled) {
-		// 	games = games.filter(game => {
-		// 		return game.cost <= settings.sliders.cost.value
-		// 	})
-		// }
-
-		// console.log(games);
 
 		return games[Math.floor(Math.random() * games.length)]
 	}
@@ -119,10 +104,6 @@
 	}
 
 </style>
-
-<!--<svelte:head>-->
-<!--	<script defer src='https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/js/bulma-slider.min.js' on:load={bulmaSlider.attach()}></script>-->
-<!--</svelte:head>-->
 
 <a class="github-fork-ribbon" data-ribbon="Fork me on GitHub" href="https://github.com/hiddenroles/partygamepicker"
 	 title="Fork me on GitHub">Fork me on GitHub</a>
@@ -188,26 +169,6 @@
 											 for="playersCountSlider">{settings.sliders.players.value}</label>
 							</div>
 						</div>
-
-						<!--						<div class="title is-5 columns">-->
-						<!--							<div class="column">-->
-						<!--								<label class="checkbox  {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-						<!--											 on:click="{e => toggleSlider('cost', e)}">-->
-						<!--									<input type="checkbox" value={settings.sliders.cost.enabled}>-->
-						<!--									Cost-->
-						<!--								</label>-->
-						<!--							</div>-->
-						<!--							<div class="column">-->
-						<!--								<input class="slider has-output-tooltip is-fullwidth" disabled={!settings.sliders.cost.enabled} id="costSlider" max="20"-->
-						<!--											 min="1"-->
-						<!--											 on:change="{e => settings.sliders.cost.value = e.target.value}" step="1" type="range"-->
-						<!--											 value={settings.sliders.cost.value}>-->
-						<!--							</div>-->
-						<!--							<div class="column">-->
-						<!--								<label class="has-text-centered {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-						<!--											 for="playersCountSlider">{"<"}{settings.sliders.cost.value}$</label>-->
-						<!--							</div>-->
-						<!--						</div>-->
 
 					</div>
 				</div>
