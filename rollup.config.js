@@ -10,7 +10,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
 	let server;
-	
+
 	function toExit() {
 		if (server) server.kill(0);
 	}
@@ -49,6 +49,8 @@ export default {
 			preprocess: preprocess()
 		}),
 
+		postcss(),
+
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
 		// some cases you'll need additional configuration -
@@ -71,7 +73,6 @@ export default {
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
 		production && terser(),
-		postcss(),
 	],
 	watch: {
 		clearScreen: false
