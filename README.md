@@ -1,8 +1,8 @@
 ---
 
-# partygamepicker
+# partygamepicker [![Netlify Status](https://api.netlify.com/api/v1/badges/9e8ace6d-3a5d-4fb3-807f-34a612da37fd/deploy-status)](https://app.netlify.com/sites/partygamepicker/deploys) [![Node.js CI](https://github.com/hiddenroles/partygamepicker/workflows/Node.js%20CI/badge.svg?branch=main)](https://github.com/hiddenroles/partygamepicker/actions?query=workflow%3A%22Node.js+CI%22)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9e8ace6d-3a5d-4fb3-807f-34a612da37fd/deploy-status)](https://app.netlify.com/sites/partygamepicker/deploys)
+
 
 `partygamepicker` is a simple project for picking a party game out of the many available.
 It is part of the broader [Hidden Roles project](https://hiddenroles.com).
