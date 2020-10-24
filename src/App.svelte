@@ -9,6 +9,7 @@
 
 	const shuffleGame = () => {
 		gameMessage = "[...]"
+		game = null
 		setTimeout(() => {
 			gameMessage = "[shuffling dices...]";
 			setTimeout(() => {
@@ -95,7 +96,7 @@
 		width: 100%;
 	}
 
-	.filters {
+	.filters, .game-card {
 		transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
 	}
 
@@ -220,60 +221,58 @@
 					<h1 class="title">
 						We are playing <i>{gameMessage}</i>
 					</h1>
+					<div class="box game-card {!game ? 'is-inactive': ''}">
+						<div class="container">
+							<h1 class="subtitle has-text-centered is-italic"><p><a
+								href="{game ? game.url: ''}">{game ? game.name : ''}</a></p></h1>
+						</div>
+						<div class="columns">
+							<div class="column">
+								<nav class="panel">
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Min Players:</div>
+												<div class="column is-two-thirds">{game ? game.min_players : ''}</div>
+											</div>
+										</div>
+									</div>
 
-					{#if game}
-						<div class="box">
-							<div class="container">
-								<h1 class="subtitle has-text-centered is-italic"><p><a href="{game.url}">{game.name}</a></p></h1>
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Max Players:</div>
+												<div class="column is-two-thirds">{game ? game.max_players : ''}</div>
+											</div>
+										</div>
+									</div>
+								</nav>
 							</div>
-							<div class="columns">
-								<div class="column">
-									<nav class="panel">
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Min Players:</div>
-													<div class="column is-two-thirds">{game.min_players}</div>
-												</div>
-											</div>
-										</div>
 
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Max Players:</div>
-													<div class="column is-two-thirds">{game.max_players}</div>
-												</div>
+							<div class="column">
+								<nav class="panel">
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Requires:</div>
+												<div class="column is-two-thirds">{game ? game.requires : ''}</div>
 											</div>
 										</div>
-									</nav>
-								</div>
+									</div>
 
-								<div class="column">
-									<nav class="panel">
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Requires:</div>
-													<div class="column is-two-thirds">{game.requires}</div>
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Requires streaming:
 												</div>
+												<div class="column is-two-thirds">{game ? game.requires_streaming ? "yes" : "no" : ''}</div>
 											</div>
 										</div>
-
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Requires streaming:
-													</div>
-													<div class="column is-two-thirds">{game.requires_streaming ? "yes" : "no"}</div>
-												</div>
-											</div>
-										</div>
-									</nav>
-								</div>
+									</div>
+								</nav>
 							</div>
 						</div>
-					{/if}
+					</div>
 
 					<button on:click={() => shuffleGame()}>
 						{#if chosenGame}
