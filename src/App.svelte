@@ -5,16 +5,17 @@
 	import Games from './games';
 
 	const shuffleGame = () => {
-		gameMessage = "[...]"
+		buttonText = "..."
 		game = null
 		setTimeout(() => {
-			gameMessage = "[shuffling dices...]";
+			buttonText = "Shuffling dices...";
 			setTimeout(() => {
-				gameMessage = "[rolling cards...]";
+				buttonText = "Rolling cards...";
 				setTimeout(() => {
 					chosenGame = true;
 					game = pickGame(Games.GamesList, settings)
 					gameMessage = game["name"]
+					buttonText = "Thx I hate it"
 				}, 1500)
 			}, 1500)
 		}, 1500)
@@ -25,6 +26,7 @@
 	let gameMessage = "...";
 	let chosenGame = false;
 	let pickerMode = true;
+	let buttonText = "Give me a game";
 
 	let settings = {
 		"sliders": {
@@ -103,6 +105,14 @@
 		top: 45vh;
 	}
 
+	.generator-button {
+		font-size: xx-large;
+	}
+
+	.subtitle {
+		text-decoration: underline;
+	}
+
 </style>
 
 <a class="github-fork-ribbon" data-ribbon="Fork me on GitHub" href="https://github.com/hiddenroles/partygamepicker"
@@ -178,15 +188,22 @@
 		</div>
 		<div class="column is-three-quarters">
 			{#if pickerMode}
+
 				<div class="container">
-					<h1 class="title">
-						We are playing <i>{gameMessage}</i>
-					</h1>
+					<div class="has-text-centered">
+						<button class="generator-button" on:click={() => shuffleGame()}>
+							{buttonText}
+						</button>
+					</div>
+
+					<div><br/></div>
+
 					<div class="box game-card {!game ? 'is-inactive': ''}">
 						<div class="container">
 							<h1 class="subtitle has-text-centered is-italic"><p><a
 								href="{game ? game.url: ''}">{game ? game.name : ''}</a></p></h1>
 						</div>
+						<div><br/></div>
 						<div class="columns">
 							<div class="column">
 								<nav class="panel">
@@ -235,13 +252,6 @@
 						</div>
 					</div>
 
-					<button on:click={() => shuffleGame()}>
-						{#if chosenGame}
-							Thx I hate it
-						{:else}
-							Give me a game
-						{/if}
-					</button>
 				</div>
 			{:else}
 				<div class="container">
@@ -252,6 +262,7 @@
 							<div class="container">
 								<h1 class="subtitle has-text-centered is-italic"><p><a href="{gameEl.url}">{gameEl.name}</a></p></h1>
 							</div>
+							<div><br/></div>
 							<div class="columns">
 								<div class="column">
 									<nav class="panel">
