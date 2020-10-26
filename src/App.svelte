@@ -1,22 +1,21 @@
 <script>
 	import 'bulma/css/bulma.css'
-	// import 'bulma-slider/dist/bulma-slider.mind.css'
 	import '@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css';
 	import '@fortawesome/fontawesome-free/css/all.css'
 	import Games from './games';
-	// import * as bulmaSlider from "bulma-slider";
-	// import * as bulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
 	const shuffleGame = () => {
-		gameMessage = "[...]"
+		buttonText = "..."
+		game = null
 		setTimeout(() => {
-			gameMessage = "[shuffling dices...]";
+			buttonText = "Shuffling dices...";
 			setTimeout(() => {
-				gameMessage = "[rolling cards...]";
+				buttonText = "Rolling cards...";
 				setTimeout(() => {
 					chosenGame = true;
 					game = pickGame(Games.GamesList, settings)
 					gameMessage = game["name"]
+					buttonText = "Thx I hate it"
 				}, 1500)
 			}, 1500)
 		}, 1500)
@@ -27,6 +26,7 @@
 	let gameMessage = "...";
 	let chosenGame = false;
 	let pickerMode = true;
+	let buttonText = "Give me a game";
 
 	let settings = {
 		"sliders": {
@@ -49,11 +49,6 @@
 			"linux": true
 		}
 	}
-
-	// onMount(() => {
-	// 	shuffleGame()
-	// });
-	// bulmaSlider.attach();
 
 	function toggleSettings(e) {
 		e.stopPropagation()
@@ -78,13 +73,6 @@
 				return game.max_players >= settings.sliders.players.value && game.min_players <= settings.sliders.players.value
 			})
 		}
-		// if (settings.sliders.cost.enabled) {
-		// 	games = games.filter(game => {
-		// 		return game.cost <= settings.sliders.cost.value
-		// 	})
-		// }
-
-		// console.log(games);
 
 		return games[Math.floor(Math.random() * games.length)]
 	}
@@ -95,7 +83,7 @@
 		width: 100%;
 	}
 
-	.filters {
+	.filters, .game-card {
 		transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
 	}
 
@@ -117,11 +105,15 @@
 		top: 45vh;
 	}
 
-</style>
+	.generator-button {
+		font-size: xx-large;
+	}
 
-<!--<svelte:head>-->
-<!--	<script defer src='https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/js/bulma-slider.min.js' on:load={bulmaSlider.attach()}></script>-->
-<!--</svelte:head>-->
+	.subtitle {
+		text-decoration: underline;
+	}
+
+</style>
 
 <a class="github-fork-ribbon" data-ribbon="Fork me on GitHub" href="https://github.com/hiddenroles/partygamepicker"
 	 title="Fork me on GitHub">Fork me on GitHub</a>
@@ -188,26 +180,6 @@
 							</div>
 						</div>
 
-						<!--						<div class="title is-5 columns">-->
-						<!--							<div class="column">-->
-						<!--								<label class="checkbox  {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-						<!--											 on:click="{e => toggleSlider('cost', e)}">-->
-						<!--									<input type="checkbox" value={settings.sliders.cost.enabled}>-->
-						<!--									Cost-->
-						<!--								</label>-->
-						<!--							</div>-->
-						<!--							<div class="column">-->
-						<!--								<input class="slider has-output-tooltip is-fullwidth" disabled={!settings.sliders.cost.enabled} id="costSlider" max="20"-->
-						<!--											 min="1"-->
-						<!--											 on:change="{e => settings.sliders.cost.value = e.target.value}" step="1" type="range"-->
-						<!--											 value={settings.sliders.cost.value}>-->
-						<!--							</div>-->
-						<!--							<div class="column">-->
-						<!--								<label class="has-text-centered {!settings.sliders.cost.enabled ? 'is-disabled-slider': ''}"-->
-						<!--											 for="playersCountSlider">{"<"}{settings.sliders.cost.value}$</label>-->
-						<!--							</div>-->
-						<!--						</div>-->
-
 					</div>
 				</div>
 
@@ -216,72 +188,70 @@
 		</div>
 		<div class="column is-three-quarters">
 			{#if pickerMode}
+
 				<div class="container">
-					<h1 class="title">
-						We are playing <i>{gameMessage}</i>
-					</h1>
+					<div class="has-text-centered">
+						<button class="generator-button" on:click={() => shuffleGame()}>
+							{buttonText}
+						</button>
+					</div>
 
-					{#if game}
-						<div class="box">
-							<div class="container">
-								<h1 class="subtitle has-text-centered is-italic"><p><a href="{game.url}">{game.name}</a></p></h1>
+					<div><br/></div>
+
+					<div class="box game-card {!game ? 'is-inactive': ''}">
+						<div class="container">
+							<h1 class="subtitle has-text-centered is-italic"><p><a
+								href="{game ? game.url: ''}">{game ? game.name : ''}</a></p></h1>
+						</div>
+						<div><br/></div>
+						<div class="columns">
+							<div class="column">
+								<nav class="panel">
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Min Players:</div>
+												<div class="column is-two-thirds">{game ? game.min_players : ''}</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Max Players:</div>
+												<div class="column is-two-thirds">{game ? game.max_players : ''}</div>
+											</div>
+										</div>
+									</div>
+								</nav>
 							</div>
-							<div class="columns">
-								<div class="column">
-									<nav class="panel">
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Min Players:</div>
-													<div class="column is-two-thirds">{game.min_players}</div>
-												</div>
-											</div>
-										</div>
 
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Max Players:</div>
-													<div class="column is-two-thirds">{game.max_players}</div>
-												</div>
+							<div class="column">
+								<nav class="panel">
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Requires:</div>
+												<div class="column is-two-thirds">{game ? game.requires : ''}</div>
 											</div>
 										</div>
-									</nav>
-								</div>
+									</div>
 
-								<div class="column">
-									<nav class="panel">
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Requires:</div>
-													<div class="column is-two-thirds">{game.requires}</div>
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">Requires streaming:
 												</div>
+												<div class="column is-two-thirds">{game ? game.requires_streaming ? "yes" : "no" : ''}</div>
 											</div>
 										</div>
-
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Requires streaming:
-													</div>
-													<div class="column is-two-thirds">{game.requires_streaming ? "yes" : "no"}</div>
-												</div>
-											</div>
-										</div>
-									</nav>
-								</div>
+									</div>
+								</nav>
 							</div>
 						</div>
-					{/if}
+					</div>
 
-					<button on:click={() => shuffleGame()}>
-						{#if chosenGame}
-							Thx I hate it
-						{:else}
-							Give me a game
-						{/if}
-					</button>
 				</div>
 			{:else}
 				<div class="container">
@@ -292,6 +262,7 @@
 							<div class="container">
 								<h1 class="subtitle has-text-centered is-italic"><p><a href="{gameEl.url}">{gameEl.name}</a></p></h1>
 							</div>
+							<div><br/></div>
 							<div class="columns">
 								<div class="column">
 									<nav class="panel">
