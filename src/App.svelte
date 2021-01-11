@@ -224,6 +224,17 @@
 											</div>
 										</div>
 									</div>
+
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">{game ? game.client_platforms ? "Client platform:" : "\u00A0" : '\u00A0'}
+												</div>
+												<div class="column is-two-thirds">{game ? game.client_platforms ? game.client_platforms.join(" ") : " " : ' '}</div>
+											</div>
+										</div>
+									</div>
+
 								</nav>
 							</div>
 
@@ -247,6 +258,17 @@
 											</div>
 										</div>
 									</div>
+
+									<div class="panel-block">
+										<div class="container is-fluid">
+											<div class="columns">
+												<div class="column is-one-third has-text-weight-bold">{game ? game.host_platforms ? "Host platform:" : "\u00A0" : '\u00A0'}
+												</div>
+												<div class="column is-two-thirds">{game ? game.host_platforms ? game.host_platforms.join(" ") : " " : ' '}</div>
+											</div>
+										</div>
+									</div>
+
 								</nav>
 							</div>
 						</div>
@@ -283,6 +305,17 @@
 												</div>
 											</div>
 										</div>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">{gameEl ? gameEl.client_platforms ? "Client platform:" : "\u00A0" : '\u00A0'}
+													</div>
+													<div class="column is-two-thirds">{gameEl ? gameEl.client_platforms ? gameEl.client_platforms.join(" ") : " " : ' '}</div>
+												</div>
+											</div>
+										</div>
+
 									</nav>
 								</div>
 
@@ -306,6 +339,17 @@
 												</div>
 											</div>
 										</div>
+
+										<div class="panel-block">
+											<div class="container is-fluid">
+												<div class="columns">
+													<div class="column is-one-third has-text-weight-bold">{gameEl ? gameEl.host_platforms ? "Host platform:" : "\u00A0" : '\u00A0'}
+													</div>
+													<div class="column is-two-thirds">{gameEl ? gameEl.host_platforms ? gameEl.host_platforms.join(" ") : " " : ' '}</div>
+												</div>
+											</div>
+										</div>
+
 									</nav>
 								</div>
 							</div>
