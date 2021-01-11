@@ -1,7 +1,8 @@
 <script>
 	import 'bulma/css/bulma.css'
 	import '@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css';
-	import '@fortawesome/fontawesome-free/css/all.css'
+	import '@fortawesome/fontawesome-free/css/all.css';
+	import {Windows, Linux, Apple, Googlechrome, Android, Ios} from "@icons-pack/svelte-simple-icons";
 	import Games from './games';
 
 	const shuffleGame = () => {
@@ -75,6 +76,21 @@
 		}
 
 		return games[Math.floor(Math.random() * games.length)]
+	}
+
+	function platformIcon(platformLabel) {
+		if (platformLabel === "windows")
+			return "<Windows/>";
+		if (platformLabel === "linux")
+			return "<Linux/>";
+		if (platformLabel === "mac")
+			return "<Apple/>";
+		if (platformLabel === "ios")
+			return "<Ios/>";
+		if (platformLabel === "android")
+			return "<Android/>";
+		if (platformLabel === "web")
+			return "<Googlechrome/>";
 	}
 </script>
 
@@ -210,17 +226,8 @@
 									<div class="panel-block">
 										<div class="container is-fluid">
 											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Min Players:</div>
-												<div class="column is-two-thirds">{game ? game.min_players : ''}</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="panel-block">
-										<div class="container is-fluid">
-											<div class="columns">
-												<div class="column is-one-third has-text-weight-bold">Max Players:</div>
-												<div class="column is-two-thirds">{game ? game.max_players : ''}</div>
+												<div class="column is-one-third has-text-weight-bold">Players:</div>
+												<div class="column is-two-thirds">{game ? game.min_players : '0'} - {game ? game.max_players : '∞'}</div>
 											</div>
 										</div>
 									</div>
@@ -230,7 +237,33 @@
 											<div class="columns">
 												<div class="column is-one-third has-text-weight-bold">{game ? game.client_platforms ? "Client platform:" : "\u00A0" : '\u00A0'}
 												</div>
-												<div class="column is-two-thirds">{game ? game.client_platforms ? game.client_platforms.join(" ") : " " : ' '}</div>
+												<div class="column is-two-thirds">
+													{#if game && game.client_platforms }
+														{#each game.client_platforms as platform}
+															{#if platform === "windows"}
+																<Windows/>
+															{/if}
+															{#if platform === "linux"}
+																<Linux/>
+															{/if}
+															{#if platform === "mac"}
+																<Apple/>
+															{/if}
+															{#if platform === "ios"}
+																<Ios/>
+															{/if}
+															{#if platform === "android"}
+																<Android/>
+															{/if}
+															{#if platform === "web"}
+																<Googlechrome/>
+															{/if}
+															{ " " }
+														{/each}
+													{:else}
+														{" "}
+													{/if}
+												</div>
 											</div>
 										</div>
 									</div>
@@ -264,7 +297,32 @@
 											<div class="columns">
 												<div class="column is-one-third has-text-weight-bold">{game ? game.host_platforms ? "Host platform:" : "\u00A0" : '\u00A0'}
 												</div>
-												<div class="column is-two-thirds">{game ? game.host_platforms ? game.host_platforms.join(" ") : " " : ' '}</div>
+												<div class="column is-two-thirds">
+													{#if game && game.host_platforms }
+														{#each game.host_platforms as platform}
+															{#if platform === "windows"}
+																<Windows/>
+															{/if}
+															{#if platform === "linux"}
+																<Linux/>
+															{/if}
+															{#if platform === "mac"}
+																<Apple/>
+															{/if}
+															{#if platform === "ios"}
+																<Ios/>
+															{/if}
+															{#if platform === "android"}
+																<Android/>
+															{/if}
+															{#if platform === "web"}
+																<Googlechrome/>
+															{/if}
+															{ " " }
+														{/each}
+													{:else}
+														{" "}
+													{/if}
 											</div>
 										</div>
 									</div>
@@ -291,17 +349,8 @@
 										<div class="panel-block">
 											<div class="container is-fluid">
 												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Min Players:</div>
-													<div class="column is-two-thirds">{gameEl.min_players}</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="panel-block">
-											<div class="container is-fluid">
-												<div class="columns">
-													<div class="column is-one-third has-text-weight-bold">Max Players:</div>
-													<div class="column is-two-thirds">{gameEl.max_players}</div>
+													<div class="column is-one-third has-text-weight-bold">Players: </div>
+													<div class="column is-two-thirds">{gameEl.min_players} - {gameEl.max_players}</div>
 												</div>
 											</div>
 										</div>
@@ -311,7 +360,33 @@
 												<div class="columns">
 													<div class="column is-one-third has-text-weight-bold">{gameEl ? gameEl.client_platforms ? "Client platform:" : "\u00A0" : '\u00A0'}
 													</div>
-													<div class="column is-two-thirds">{gameEl ? gameEl.client_platforms ? gameEl.client_platforms.join(" ") : " " : ' '}</div>
+													<div class="column is-two-thirds">
+														{#if gameEl && gameEl.client_platforms }
+															{#each gameEl.client_platforms as platform}
+																{#if platform === "windows"}
+																	<Windows/>
+																{/if}
+																{#if platform === "linux"}
+																	<Linux/>
+																{/if}
+																{#if platform === "mac"}
+																	<Apple/>
+																{/if}
+																{#if platform === "ios"}
+																	<Ios/>
+																{/if}
+																{#if platform === "android"}
+																	<Android/>
+																{/if}
+																{#if platform === "web"}
+																	<Googlechrome/>
+																{/if}
+																{ " " }
+															{/each}
+														{:else}
+															{" "}
+														{/if}
+													</div>
 												</div>
 											</div>
 										</div>
@@ -345,7 +420,33 @@
 												<div class="columns">
 													<div class="column is-one-third has-text-weight-bold">{gameEl ? gameEl.host_platforms ? "Host platform:" : "\u00A0" : '\u00A0'}
 													</div>
-													<div class="column is-two-thirds">{gameEl ? gameEl.host_platforms ? gameEl.host_platforms.join(" ") : " " : ' '}</div>
+													<div class="column is-two-thirds">
+														{#if gameEl && gameEl.host_platforms }
+															{#each gameEl.host_platforms as platform}
+																{#if platform === "windows"}
+																	<Windows/>
+																{/if}
+																{#if platform === "linux"}
+																	<Linux/>
+																{/if}
+																{#if platform === "mac"}
+																	<Apple/>
+																{/if}
+																{#if platform === "ios"}
+																	<Ios/>
+																{/if}
+																{#if platform === "android"}
+																	<Android/>
+																{/if}
+																{#if platform === "web"}
+																	<Googlechrome/>
+																{/if}
+																{ " " }
+															{/each}
+														{:else}
+															{" "}
+														{/if}
+													</div>
 												</div>
 											</div>
 										</div>

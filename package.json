@@ -28,6 +28,7 @@
   "dependencies": {
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "@icons-pack/svelte-simple-icons": "^1.10.1",
     "bulma": "^0.9.1",
     "bulma-slider": "^2.0.4",
     "sirv-cli": "^1.0.0",
