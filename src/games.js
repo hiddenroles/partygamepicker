@@ -9,6 +9,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Fibbage Enough about You",
@@ -17,6 +19,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Survive the Internet",
@@ -25,6 +29,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Monster Seeking Monster",
@@ -33,6 +39,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Bracketeering",
@@ -41,6 +49,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Civic Doodle",
@@ -49,6 +59,8 @@ export default class Games {
 			"requires": "Jackbox 4",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		// Jackbox 5
 		{
@@ -58,6 +70,8 @@ export default class Games {
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Split the room",
@@ -66,6 +80,8 @@ export default class Games {
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Mad verse city",
@@ -74,6 +90,8 @@ export default class Games {
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Patently stupid",
@@ -82,6 +100,8 @@ export default class Games {
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Zeeple dome",
@@ -90,6 +110,8 @@ export default class Games {
 			"requires": "Jackbox 5",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		// Jackbox 6
 		{
@@ -99,6 +121,8 @@ export default class Games {
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Role models",
@@ -107,6 +131,8 @@ export default class Games {
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Joke boat",
@@ -115,6 +141,8 @@ export default class Games {
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Dictionarium",
@@ -123,6 +151,8 @@ export default class Games {
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Push the button",
@@ -131,6 +161,8 @@ export default class Games {
 			"requires": "Jackbox 6",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		// Jackbox Party Pack 7
 		{
@@ -140,6 +172,8 @@ export default class Games {
 			"requires": "Jackbox 7",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "The Devils and the Details",
@@ -148,6 +182,8 @@ export default class Games {
 			"requires": "Jackbox 7",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Champ’d Up",
@@ -156,6 +192,8 @@ export default class Games {
 			"requires": "Jackbox 7",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Talking Points",
@@ -164,6 +202,8 @@ export default class Games {
 			"requires": "Jackbox 7",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Blather ‘Round",
@@ -172,6 +212,8 @@ export default class Games {
 			"requires": "Jackbox 7",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 		// Steam
 		{
@@ -181,6 +223,8 @@ export default class Games {
 			"requires": "Drawful",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/442070/Drawful_2/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
 		},
 
 		// Thick client
@@ -192,6 +236,7 @@ export default class Games {
 			"requires": "Tabletop Simulator",
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/286160/Tabletop_Simulator/",
+			"client_platforms": ["windows", "mac", "linux"],
 		},
 		{
 			"name": "Deceit",
@@ -200,6 +245,7 @@ export default class Games {
 			"requires": "Deceit",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/466240/Deceit/",
+			"client_platforms": ["windows"],
 		},
 		// Steam (Win), Mobile (Android, iOS)
 		{
@@ -209,6 +255,7 @@ export default class Games {
 			"requires": "Among Us",
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/945360/Among_Us/",
+			"client_platforms": ["windows", "android", "ios", "proton"],
 		},
 
 		// Web client
@@ -220,6 +267,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/onu-werewolf/",
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Codewords",
@@ -228,6 +276,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/codewords/",
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Spyfall",
@@ -236,6 +285,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/spyfall/",
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Love Letter",
@@ -244,6 +294,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/love-letter/",
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Avalon",
@@ -252,6 +303,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/avalon/",
+			"client_platforms": ["web"],
 		},
 		{
 			"name": "Enigma",
@@ -260,6 +312,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/enigma/",
+			"client_platforms": ["web"],
 		},
 		// Secret Hitler
 		{
@@ -268,7 +321,8 @@ export default class Games {
 			"max_players": 10,
 			"requires": "N/A",
 			"requires_streaming": false,
-			"url": "https://github.com/cozuya/secret-hitler",
+			"url": "https://secrethitler.io/",
+			"client_platforms": ["web"],
 		},
 		// Skribbl.io
 		{
@@ -278,6 +332,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://skribbl.io/",
+			"client_platforms": ["web"],
 		},
 		// PretendYourXyzzy
 		{
@@ -287,6 +342,7 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://pretendyoure.xyz/zy/",
+			"client_platforms": ["web"],
 		},
 		// MassiveDecks
 		{
@@ -296,8 +352,9 @@ export default class Games {
 			"requires": "N/A",
 			"requires_streaming": false,
 			"url": "https://pretendyoure.xyz/zy/",
+			"client_platforms": ["web"],
 		},
-		
+
 	]
 }
 
