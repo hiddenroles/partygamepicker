@@ -270,7 +270,34 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://github.com/cozuya/secret-hitler",
 		},
-
+		// Skribbl.io
+		{
+			"name": "Skribbl.io",
+			"min_players": 2,
+			"max_players": 10,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://skribbl.io/",
+		},
+		// PretendYourXyzzy
+		{
+			"name": "Pretend you're Xyzzy / Cards Against Humanity",
+			"min_players": 3,
+			"max_players": 20,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://pretendyoure.xyz/zy/",
+		},
+		// MassiveDecks
+		{
+			"name": "MassiveDecks / Cards Against Humanity",
+			"min_players": 3,
+			"max_players": 50,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://pretendyoure.xyz/zy/",
+		},
+		
 	]
 }
 
