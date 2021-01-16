@@ -257,6 +257,36 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/945360/Among_Us/",
 			"client_platforms": ["windows", "android", "ios", "proton"],
 		},
+		// Steam (Win), Mobile (Android, iOS)
+		{
+			"name": "Carcassone",
+			"min_players": 1,
+			"max_players": 6,
+			"requires": "Carcassone",
+			"requires_streaming": false,
+			"url": "https://www.asmodee-digital.com/en/carcassonne/",
+			"client_platforms": ["windows", "android", "ios"],
+		},
+		// Steam (Win), Mobile (Android, iOS)
+		{
+			"name": "Splendor",
+			"min_players": 2,
+			"max_players": 4,
+			"requires": "Splendor",
+			"requires_streaming": false,
+			"url": "https://www.asmodee-digital.com/en/splendor/",
+			"client_platforms": ["windows", "android", "ios"],
+		},
+		// Steam (Win)
+		{
+			"name": "Clue/Cluedo",
+			"min_players": 2,
+			"max_players": 6,
+			"requires": "Splendor",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/794800/ClueCluedo_The_Classic_Mystery_Game/",
+			"client_platforms": ["windows"],
+		},
 
 		// Web client
 		// Netgames
