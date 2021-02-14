@@ -384,6 +384,16 @@ export default class Games {
 			"url": "https://pretendyoure.xyz/zy/",
 			"client_platforms": ["web"],
 		},
+		// MassiveDecks
+		{
+			"name": "Gartic Phone / Pictionary",
+			"min_players": 3,
+			"max_players": 14,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://garticphone.com/",
+			"client_platforms": ["web"],
+		},
 
 	]
 }
