@@ -445,7 +445,25 @@ export default class Games {
 			"url": "https://garticphone.com/",
 			"client_platforms": ["web"],
 		},
-
+		// BoardGamesArena, selected games
+		{
+			"name": "Solo",
+			"min_players": 2,
+			"max_players": 10,
+			"requires": "BoardGameArena Subscription",
+			"requires_streaming": false,
+			"url": "https://boardgamearena.com/gamepanel?game=solo",
+			"client_platforms": ["web"],
+		},
+		{
+			"name": "Coup",
+			"min_players": 2,
+			"max_players": 8,
+			"requires": "BoardGameArena Subscription",
+			"requires_streaming": false,
+			"url": "https://boardgamearena.com/gamepanel?game=coupcitystate",
+			"client_platforms": ["web"],
+		},
 	]
 }
 
