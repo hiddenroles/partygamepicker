@@ -333,7 +333,7 @@ export default class Games {
 			"name": "Clue/Cluedo",
 			"min_players": 2,
 			"max_players": 6,
-			"requires": "Splendor",
+			"requires": "Clue/Cluedo",
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/794800/ClueCluedo_The_Classic_Mystery_Game/",
 			"client_platforms": ["windows"],
@@ -435,7 +435,7 @@ export default class Games {
 			"url": "https://pretendyoure.xyz/zy/",
 			"client_platforms": ["web"],
 		},
-		// MassiveDecks
+		// Gartic Phone
 		{
 			"name": "Gartic Phone / Pictionary",
 			"min_players": 3,
