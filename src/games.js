@@ -11,6 +11,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Fibbage Enough about You",
@@ -21,6 +22,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Survive the Internet",
@@ -31,6 +33,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Monster Seeking Monster",
@@ -41,6 +44,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Bracketeering",
@@ -51,6 +55,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Civic Doodle",
@@ -61,6 +66,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/610180/The_Jackbox_Party_Pack_4/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Jackbox 5
 		{
@@ -72,6 +78,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Split the room",
@@ -82,6 +89,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Mad verse city",
@@ -92,6 +100,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Patently stupid",
@@ -102,6 +111,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Zeeple dome",
@@ -112,6 +122,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/774461/The_Jackbox_Party_Pack_5/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Jackbox 6
 		{
@@ -123,6 +134,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Role models",
@@ -133,6 +145,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Joke boat",
@@ -143,6 +156,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Dictionarium",
@@ -153,6 +167,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Push the button",
@@ -163,6 +178,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1005300/The_Jackbox_Party_Pack_6/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Jackbox Party Pack 7
 		{
@@ -174,6 +190,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "The Devils and the Details",
@@ -184,6 +201,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Champ’d Up",
@@ -194,6 +212,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Talking Points",
@@ -204,6 +223,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Blather ‘Round",
@@ -214,6 +234,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1211630/The_Jackbox_Party_Pack_7/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Jackbox Party Pack 8
 		{
@@ -225,6 +246,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "The Wheel of Enormous Proportions",
@@ -235,6 +257,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Job Job",
@@ -245,6 +268,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "The Poll Mine",
@@ -255,6 +279,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		{
 			"name": "Weapons Drawn",
@@ -265,6 +290,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Steam
 		{
@@ -276,6 +302,7 @@ export default class Games {
 			"url": "https://store.steampowered.com/app/442070/Drawful_2/",
 			"host_platforms": ["windows", "mac", "linux"],
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 
 		// Thick client
@@ -288,6 +315,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/286160/Tabletop_Simulator/",
 			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Deceit",
@@ -297,6 +325,7 @@ export default class Games {
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/466240/Deceit/",
 			"client_platforms": ["windows"],
+			"game_categories": ["videogame"],
 		},
 		// Steam (Win), Mobile (Android, iOS)
 		{
@@ -307,6 +336,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/945360/Among_Us/",
 			"client_platforms": ["windows", "android", "ios", "proton"],
+			"game_categories": ["videogame"],
 		},
 		// Steam (Win), Mobile (Android, iOS)
 		{
@@ -317,6 +347,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://www.asmodee-digital.com/en/carcassonne/",
 			"client_platforms": ["windows", "android", "ios"],
+			"game_categories": ["board"],
 		},
 		// Steam (Win), Mobile (Android, iOS)
 		{
@@ -327,6 +358,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://www.asmodee-digital.com/en/splendor/",
 			"client_platforms": ["windows", "android", "ios"],
+			"game_categories": ["board"],
 		},
 		// Steam (Win)
 		{
@@ -337,6 +369,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://store.steampowered.com/app/794800/ClueCluedo_The_Classic_Mystery_Game/",
 			"client_platforms": ["windows"],
+			"game_categories": ["board"],
 		},
 
 		// Web client
@@ -349,6 +382,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/onu-werewolf/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Codewords",
@@ -358,6 +392,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/codewords/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Spyfall",
@@ -367,6 +402,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/spyfall/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Love Letter",
@@ -376,6 +412,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/love-letter/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Avalon",
@@ -385,6 +422,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/avalon/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		{
 			"name": "Enigma",
@@ -394,6 +432,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://netgames.io/games/enigma/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		// Secret Hitler
 		{
@@ -404,6 +443,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://secrethitler.io/",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
 		// Skribbl.io
 		{
@@ -414,6 +454,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://skribbl.io/",
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// PretendYourXyzzy
 		{
@@ -424,6 +465,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://pretendyoure.xyz/zy/",
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// MassiveDecks
 		{
@@ -434,6 +476,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://pretendyoure.xyz/zy/",
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// Gartic Phone
 		{
@@ -444,6 +487,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://garticphone.com/",
 			"client_platforms": ["web"],
+			"game_categories": ["party"],
 		},
 		// BoardGamesArena, selected games
 		{
@@ -454,6 +498,7 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://boardgamearena.com/gamepanel?game=solo",
 			"client_platforms": ["web"],
+			"game_categories": ["cards"],
 		},
 		{
 			"name": "Coup",
@@ -463,7 +508,252 @@ export default class Games {
 			"requires_streaming": false,
 			"url": "https://boardgamearena.com/gamepanel?game=coupcitystate",
 			"client_platforms": ["web"],
+			"game_categories": ["board"],
 		},
+		{
+			"name": "Love Letter",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "BoardGameArena Subscription",
+			"requires_streaming": false,
+			"url": "https://boardgamearena.com/gamepanel?game=loveletter",
+			"client_platforms": ["web"],
+			"game_categories": ["board"],
+		},
+		{
+			"name": "Carcassone",
+			"min_players": 2,
+			"max_players": 5,
+			"requires": "BoardGameArena Subscription",
+			"requires_streaming": false,
+			"url": "https://boardgamearena.com/gamepanel?game=carcassonne",
+			"client_platforms": ["web"],
+			"game_categories": ["board"],
+		},
+		{
+			"name": "Settlers of Catan (Colonist)",
+			"min_players": 2,
+			"max_players": 4,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://colonist.io/",
+			"client_platforms": ["web"],
+			"game_categories": ["board"],
+		},
+		{
+			"name": "Settlers of Catan (Colonist)",
+			"min_players": 5,
+			"max_players": 6,
+			"requires": "5-6 Player Game Mode Purchase",
+			"requires_streaming": false,
+			"url": "https://colonist.io/",
+			"client_platforms": ["web"],
+			"game_categories": ["board"],
+		},
+		{
+			"name": "Settlers of Catan (Colonist)",
+			"min_players": 7,
+			"max_players": 8,
+			"requires": "7-8 Game Mode Purchase",
+			"requires_streaming": false,
+			"url": "https://colonist.io/",
+			"client_platforms": ["web"],
+			"game_categories": ["board"],
+		},
+
+		// VIDEOGAMES
+
+		// From CubeCoders AMP list (dedicated servers)
+		{
+			"name": "7 Ways To Die",
+			"min_players": 1,
+			"max_players": 8,  // Max officially supported
+			"requires": "7 Ways To Die",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "ARK: Survival Evolved",
+			"min_players": 1,
+			"max_players": 32,  // Can go higher with optimizations
+			"requires": "ARK: Survival Evolved",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Arma III",
+			"min_players": 2,
+			"max_players": 64,  // Theoretically, no max limit, however reports it takes serious optimization past this point
+			"requires": "Arma III",
+			"requires_streaming": false,
+			"url": "",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Factorio",
+			"min_players": 1,
+			"max_players": 250,  // Max is 65535, but the game is in sync constantly so hard to achieve?
+			"requires": "Factorio",
+			"requires_streaming": false,
+			"url": "https://www.factorio.com/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Minecraft (Java)",
+			"min_players": 1,
+			"max_players": 200,  // Can go much higher with enough resources
+			"requires": "Minecraft (Java)",
+			"requires_streaming": false,
+			"url": "https://www.minecraft.net/en-us/store/minecraft-java-edition",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Minecraft (Bedrock)",
+			"min_players": 1,
+			"max_players": 30,  // Probably can go higher on a dedicated server
+			"requires": "Minecraft (Bedrock)",
+			"requires_streaming": false,
+			"url": "https://www.minecraft.net/en-us/get-minecraft",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux", "android", "ios"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Rust",
+			"min_players": 2,
+			"max_players": 50,  // Can't find a good source here
+			"requires": "Rust",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/252490/Rust/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Starbound",
+			"min_players": 1,
+			"max_players": 4,  // Can hack it to be higher, but reports of very high memory usage (~1GB/player?) exist online. Also, max party size is 4 beyond degradation of UI
+			"requires": "Starbound",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/211820/Starbound/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Terraria",
+			"min_players": 1,
+			"max_players": 32, // Can't find reliable reports on people actually using 255 which is the maximum
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+
+		// AMP Source, not everything is listed
+		{
+			"name": "Alien Swarm: Reactive Drop",
+			"min_players": 2,
+			"max_players": 8, // Can go to 32 for PvP
+			"requires": "N/A",  // Free
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/563560/Alien_Swarm_Reactive_Drop/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Counter-Strike: Global Offensive",
+			"min_players": 2,
+			"max_players": 32,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Trouble in Terrorist Town (Garry's Mod)",
+			"min_players": 3,
+			"max_players": 32,
+			"requires": "Garry's Mod, CS:GO",
+			"requires_streaming": false,
+			"url": "https://www.troubleinterroristtown.com/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Prop Hunt (Garry's Mod)",
+			"min_players": 2,
+			"max_players": 32,
+			"requires": "Garry's Mod",
+			"requires_streaming": false,
+			"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=135509255",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Murder (Garry's Mod)",
+			"min_players": 3,
+			"max_players": 32,
+			"requires": "Garry's Mod, Country-Strike: Source",
+			"requires_streaming": false,
+			"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=187073946",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Left 4 Dead 2",
+			"min_players": 2,
+			"max_players": 8,
+			"requires": "Left 4 Dead 2",
+			"requires_streaming": false,
+			"url": "Left 4 Dead 2",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Team Fortress 2",
+			"min_players": 2,
+			"max_players": 32,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/440/Team_Fortress_2/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+
+		// {
+		// 	"name": "",
+		// 	"min_players": 2,
+		// 	"max_players": 4,
+		// 	"requires": "N/A",
+		// 	"requires_streaming": false,
+		// 	"url": "",
+		// 	"host_platform": ["windows", "linux"],
+		// 	"client_platforms": ["windows", "mac", "linux"],
+		// 	"game_categories": ["videogame"],
+		// },
 	]
 }
 
