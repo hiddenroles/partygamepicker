@@ -47,7 +47,12 @@
 			"mac": true,
 			"ios": true,
 			"android": true,
-			"linux": true
+			"linux": true,
+		},
+		"categories": {
+			"party": true,
+			"board": true,
+			"videogame": false,
 		}
 	}
 
@@ -68,7 +73,18 @@
 		settings.sliders[filter].enabled = e.target.checked
 	}
 
+	function toggleCategory(filter, e) {
+		console.log(`Toggling category ${filter} to ${e.target.value}`)
+		settings.categories[filter] = e.target.checked
+	}
+
 	function pickGame(games, settings) {
+		// Game categories filtering
+		games = games.filter(game => {
+			return game.game_categories.some(el => Object.entries(settings.categories).filter(([k, v]) => v).map(([k, v]) => k).includes(el))
+		})
+
+		// Players filter
 		if (settings.sliders.players.enabled) {
 			games = games.filter(game => {
 				return game.max_players >= settings.sliders.players.value && game.min_players <= settings.sliders.players.value
@@ -193,6 +209,33 @@
 							<div class="column">
 								<label class="has-text-centered {!settings.sliders.players.enabled ? 'is-disabled-slider': ''}"
 											 for="playersCountSlider">{settings.sliders.players.value}</label>
+							</div>
+						</div>
+						<div class="title is-5 columns">
+							<div class="column">
+								<label class="checkbox {!settings.categories.party ? 'is-disabled-slider': ''}">
+									<input on:change="{e => toggleCategory('party', e)}" type="checkbox"
+												 value={settings.categories.party}>
+									Party Games (e.g. Jackbox)
+								</label>
+							</div>
+						</div>
+						<div class="title is-5 columns">
+							<div class="column">
+								<label class="checkbox {!settings.categories.board ? 'is-disabled-slider': ''}">
+									<input on:change="{e => toggleCategory('board', e)}" type="checkbox"
+												 value={settings.categories.board}>
+									Board Games (e.g. Catan)
+								</label>
+							</div>
+						</div>
+						<div class="title is-5 columns">
+							<div class="column">
+								<label class="checkbox {!settings.categories.videogame ? 'is-disabled-slider': ''}">
+									<input on:change="{e => toggleCategory('videogame', e)}" type="checkbox"
+												 value={settings.categories.videogame}>
+									Videogames (e.g. CS:GO)
+								</label>
 							</div>
 						</div>
 
@@ -326,7 +369,7 @@
 											</div>
 										</div>
 									</div>
-
+									</div>
 								</nav>
 							</div>
 						</div>
@@ -337,6 +380,8 @@
 				<div class="container">
 					{#each Games.GamesList.filter(g => {
 						return settings.sliders.players.enabled ? g.max_players >= settings.sliders.players.value && g.min_players <= settings.sliders.players.value : true
+					}).filter(g => {
+						return g.game_categories.some(el => Object.entries(settings.categories).filter(([k, v]) => v).map(([k, v]) => k).includes(el))
 					}) as gameEl}
 						<div class="box">
 							<div class="container">
