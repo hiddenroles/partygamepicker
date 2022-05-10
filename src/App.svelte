@@ -69,13 +69,8 @@
 	}
 
 	function toggleSlider(filter, e) {
-		console.log(`Toggling slider ${filter} to ${e.target.value}`)
+		console.log(`Toggling slider ${filter} to ${e.target.checked}`)
 		settings.sliders[filter].enabled = e.target.checked
-	}
-
-	function toggleCategory(filter, e) {
-		console.log(`Toggling category ${filter} to ${e.target.value}`)
-		settings.categories[filter] = e.target.checked
 	}
 
 	function pickGame(games, settings) {
@@ -214,8 +209,7 @@
 						<div class="title is-5 columns">
 							<div class="column">
 								<label class="checkbox {!settings.categories.party ? 'is-disabled-slider': ''}">
-									<input on:change="{e => toggleCategory('party', e)}" type="checkbox"
-												 value={settings.categories.party}>
+									<input type="checkbox" bind:checked={settings.categories.party}>
 									Party Games (e.g. Jackbox)
 								</label>
 							</div>
@@ -223,8 +217,8 @@
 						<div class="title is-5 columns">
 							<div class="column">
 								<label class="checkbox {!settings.categories.board ? 'is-disabled-slider': ''}">
-									<input on:change="{e => toggleCategory('board', e)}" type="checkbox"
-												 value={settings.categories.board}>
+									<input type="checkbox"
+												 bind:checked={settings.categories.board}>
 									Board Games (e.g. Catan)
 								</label>
 							</div>
@@ -232,8 +226,8 @@
 						<div class="title is-5 columns">
 							<div class="column">
 								<label class="checkbox {!settings.categories.videogame ? 'is-disabled-slider': ''}">
-									<input on:change="{e => toggleCategory('videogame', e)}" type="checkbox"
-												 value={settings.categories.videogame}>
+									<input type="checkbox"
+												 bind:checked={settings.categories.videogame}>
 									Videogames (e.g. CS:GO)
 								</label>
 							</div>
