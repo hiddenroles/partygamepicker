@@ -562,6 +562,120 @@ export default class Games {
 		},
 
 		// VIDEOGAMES
+
+		// From CubeCoders AMP list (dedicated servers)
+		{
+			"name": "7 Ways To Die",
+			"min_players": 1,
+			"max_players": 8,  // Max officially supported
+			"requires": "7 Ways To Die",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "ARK: Survival Evolved",
+			"min_players": 1,
+			"max_players": 32,  // Can go higher with optimizations
+			"requires": "ARK: Survival Evolved",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Arma III",
+			"min_players": 2,
+			"max_players": 64,  // Theoretically, no max limit, however reports it takes serious optimization past this point
+			"requires": "Arma III",
+			"requires_streaming": false,
+			"url": "",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Factorio",
+			"min_players": 1,
+			"max_players": 250,  // Max is 65535, but the game is in sync constantly so hard to achieve?
+			"requires": "Factorio",
+			"requires_streaming": false,
+			"url": "https://www.factorio.com/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Minecraft (Java)",
+			"min_players": 1,
+			"max_players": 200,  // Can go much higher with enough resources
+			"requires": "Minecraft (Java)",
+			"requires_streaming": false,
+			"url": "https://www.minecraft.net/en-us/store/minecraft-java-edition",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Minecraft (Bedrock)",
+			"min_players": 1,
+			"max_players": 30,  // Probably can go higher on a dedicated server
+			"requires": "Minecraft (Bedrock)",
+			"requires_streaming": false,
+			"url": "https://www.minecraft.net/en-us/get-minecraft",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux", "android", "ios"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Rust",
+			"min_players": 2,
+			"max_players": 50,  // Can't find a good source here
+			"requires": "Rust",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/252490/Rust/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Starbound",
+			"min_players": 1,
+			"max_players": 4,  // Can hack it to be higher, but reports of very high memory usage (~1GB/player?) exist online. Also, max party size is 4 beyond degradation of UI
+			"requires": "Starbound",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/211820/Starbound/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Terraria",
+			"min_players": 1,
+			"max_players": 32, // Can't find reliable reports on people actually using 255 which is the maximum
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+
+		// AMP Source, not everything is listed
+		{
+			"name": "Alien Swarm: Reactive Drop",
+			"min_players": 2,
+			"max_players": 8, // Can go to 32 for PvP
+			"requires": "N/A",  // Free
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/563560/Alien_Swarm_Reactive_Drop/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows"],
+			"game_categories": ["videogame"],
+		},
 		{
 			"name": "Counter-Strike: Global Offensive",
 			"min_players": 2,
@@ -573,6 +687,73 @@ export default class Games {
 			"client_platforms": ["windows", "mac", "linux"],
 			"game_categories": ["videogame"],
 		},
+		{
+			"name": "Trouble in Terrorist Town (Garry's Mod)",
+			"min_players": 3,
+			"max_players": 32,
+			"requires": "Garry's Mod, CS:GO",
+			"requires_streaming": false,
+			"url": "https://www.troubleinterroristtown.com/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Prop Hunt (Garry's Mod)",
+			"min_players": 2,
+			"max_players": 32,
+			"requires": "Garry's Mod",
+			"requires_streaming": false,
+			"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=135509255",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Murder (Garry's Mod)",
+			"min_players": 3,
+			"max_players": 32,
+			"requires": "Garry's Mod, Country-Strike: Source",
+			"requires_streaming": false,
+			"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=187073946",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Left 4 Dead 2",
+			"min_players": 2,
+			"max_players": 8,
+			"requires": "Left 4 Dead 2",
+			"requires_streaming": false,
+			"url": "Left 4 Dead 2",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+		{
+			"name": "Team Fortress 2",
+			"min_players": 2,
+			"max_players": 32,
+			"requires": "N/A",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/440/Team_Fortress_2/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
+
+		// {
+		// 	"name": "",
+		// 	"min_players": 2,
+		// 	"max_players": 4,
+		// 	"requires": "N/A",
+		// 	"requires_streaming": false,
+		// 	"url": "",
+		// 	"host_platform": ["windows", "linux"],
+		// 	"client_platforms": ["windows", "mac", "linux"],
+		// 	"game_categories": ["videogame"],
+		// },
 	]
 }
 
