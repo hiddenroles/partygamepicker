@@ -742,6 +742,17 @@ export default class Games {
 			"client_platforms": ["windows", "mac", "linux"],
 			"game_categories": ["videogame"],
 		},
+		{
+			"name": "Don't Starve Together",
+			"min_players": 2,
+			"max_players": 64,
+			"requires": "Don't Starve Together",
+			"requires_streaming": false,
+			"url": "https://store.steampowered.com/app/322330/Dont_Starve_Together/",
+			"host_platform": ["windows", "linux"],
+			"client_platforms": ["windows", "mac", "linux"],
+			"game_categories": ["videogame"],
+		},
 
 		// {
 		// 	"name": "",
