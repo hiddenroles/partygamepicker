@@ -1,6 +1,61 @@
 export default class Games {
 	static GamesList = [
-		// Streamed via Discord
+		// Streamed via Discord		// Jackbox 9
+		{
+			"name": "Fibbage 4",
+			"min_players": 2,
+			"max_players": 8,
+			"requires": "Jackbox 9",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
+			"game_categories": ["party"],
+		},
+		{
+			"name": "Quixort ",
+			"min_players": 1,
+			"max_players": 10,
+			"requires": "Jackbox 9",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
+			"game_categories": ["party"],
+		},
+		{
+			"name": "Junktopia  ",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 9",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
+			"game_categories": ["party"],
+		},
+		{
+			"name": "Nonsensory",
+			"min_players": 3,
+			"max_players": 8,
+			"requires": "Jackbox 9",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
+			"game_categories": ["party"],
+		},
+		{
+			"name": "Roomerang",
+			"min_players": 4,
+			"max_players": 9,
+			"requires": "Jackbox 9",
+			"requires_streaming": true,
+			"url": "https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/",
+			"host_platforms": ["windows", "mac", "linux"],
+			"client_platforms": ["web"],
+			"game_categories": ["party"],
+		},
 		// Jackbox 4
 		{
 			"name": "Fibbage 3",
