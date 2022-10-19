@@ -13,7 +13,7 @@ export default class Games {
 			"game_categories": ["party"],
 		},
 		{
-			"name": "Quixort ",
+			"name": "Quixort",
 			"min_players": 1,
 			"max_players": 10,
 			"requires": "Jackbox 9",
@@ -24,7 +24,7 @@ export default class Games {
 			"game_categories": ["party"],
 		},
 		{
-			"name": "Junktopia  ",
+			"name": "Junktopia",
 			"min_players": 3,
 			"max_players": 8,
 			"requires": "Jackbox 9",
