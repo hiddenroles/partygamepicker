@@ -318,7 +318,7 @@ export default class Games {
 			"name": "Job Job",
 			"min_players": 3,
 			"max_players": 10,
-			"requires": "Jackbox 10",
+			"requires": "Jackbox 8",
 			"requires_streaming": true,
 			"url": "https://store.steampowered.com/app/1552350/The_Jackbox_Party_Pack_8/",
 			"host_platforms": ["windows", "mac", "linux"],
